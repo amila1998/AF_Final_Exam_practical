@@ -13,7 +13,7 @@ app.use(json());
 app.use(cors());
 
 //routes
-const userRouter = require('./routes/userRouter.js');
+const userRouter = require('./routes/userRouter');
 app.use(userRouter.routes()).use(userRouter.allowedMethods());
 
 
